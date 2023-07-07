@@ -6,7 +6,7 @@
 
   問題: [Palindrome number](https://leetcode.com/problems/palindrome-number/)
 
-  [コード]()
+  コード: [./codes/palindrome_number.rb](https://github.com/DaisukeKarasawa/blog/blob/main/day-7-2/leetcode/codes/palindrome_number.rb)
 
 整数を桁ごとの数字の配列に変換するために使用する。また、負の整数には使えない。
 
@@ -24,7 +24,7 @@ puts digitsArray    # [5, 4, 3, 2, 1]
 
 配列に繰り返し処理(while 文)を重複させ、計算量が増えてしまうところを、Hash を使用することで、配列の値を頭から記録しておくことで、一回の繰り返し処理で済ませることができる。
 
-[私のコード]()ランタイム：1911ms
+[私のコード](https://github.com/DaisukeKarasawa/blog/blob/main/day-7-2/leetcode/codes/two-sum.rb)ランタイム：1911ms
 
 ```./codes/two-sum.rb
 # 配列要素を二つ回して、全探索する
@@ -40,7 +40,7 @@ while i < nums.length
 end
 ```
 
-[参照コード]()ランタイム：95ms
+[参照コード](https://github.com/DaisukeKarasawa/blog/blob/main/day-7-2/leetcode/codes/two_sum_reference.rb)ランタイム：95ms
 
 ```./codes/two_sum_reference.rb
 # Hashを使用して、組み合わせが来るまでのindexを記録しておく
@@ -60,7 +60,7 @@ end
 
   問題: [Nim Game](https://leetcode.com/problems/nim-game/)
 
-  [コード]()
+  コード: [./codes/nim_game.rb](https://github.com/DaisukeKarasawa/blog/blob/main/day-7-2/leetcode/codes/nim_game.rb)
 
 ニムゲームは、相手に 4 の倍数分の石の数にすれば勝てる。
 

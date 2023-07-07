@@ -6,7 +6,7 @@
 
   問題: [文字列へ変換](https://recursionist.io/dashboard/problems/149)
 
-  [コード]()
+  コード: [./codes/code_149.rb](https://github.com/DaisukeKarasawa/blog/blob/main/day-7-2/recursion/codes/code_149.rb)
 
 #### 例：`str += "a"`を n 回繰り返す のと `arr << "a"`を n 回繰り返したのちに.join する との効率の違い
 

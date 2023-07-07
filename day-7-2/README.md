@@ -2,8 +2,10 @@
 
 ### 学習記録
 
-- 学んだこと
+- [LeetCode](https://github.com/DaisukeKarasawa/blog/tree/main/day-7-2/leetcode)
 
-  [LeetCode]()
+  LeetCode でアルゴリズムの学習を行なった際に学んだことまとめ
 
-  [Recursion]()
+- [Recursion](https://github.com/DaisukeKarasawa/blog/tree/main/day-7-2/recursionsss)
+
+  Recursion でアルゴリズムの学習を行なった際に学んだことまとめ
