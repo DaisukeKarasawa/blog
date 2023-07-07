@@ -1,6 +1,6 @@
 ## 学習したこと： [LeetCode](https://leetcode.com/)
 
-### digits メソッド
+### - digits メソッド -
 
 - 参照
 
@@ -16,7 +16,7 @@ digitsArray = number.digits
 puts digitsArray    # [5, 4, 3, 2, 1]
 ```
 
-### 繰り返し処理
+### - 繰り返し処理 -
 
 - 参照
 
@@ -54,7 +54,7 @@ num.each_with_index do |number, index|
 end
 ```
 
-### ニムゲームの勝利法則
+### - ニムゲームの勝利法則 -
 
 - 参照
 
