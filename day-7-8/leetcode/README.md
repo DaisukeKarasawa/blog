@@ -70,7 +70,7 @@ parseDate = Date.parse(date)
 puts parseDate.class    # Date
 ```
 
-**日付差分を計算するときの注意点**
+**`日付差分を計算するときの注意点`**
 
 日付の差分を計算すると、結果として`Rational`(有理数)オブジェクトが返される場合があり、正確な整数値ではなく分数となることがある。したがって、`to_i`を使用することで整数値に変換する必要がある場合がる。
 
@@ -83,4 +83,29 @@ result = (Date.parse(date1) - Date.parse(date2))
 
 puts result.class           # Rational
 puts result.to_i.abs        # 365
+```
+
+---
+
+### Object#dup
+
+- 参照
+
+  問題: [Find Words That Can Be Formed by Characters
+  ](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)
+
+  コード: [./codes/find-words-that-can-be-formed-by-characters.rb](https://github.com/DaisukeKarasawa/blog/blob/main/day-7-8/leetcode/codes/find-words-that-can-be-formed-by-characters.rb)
+
+`dup`メソッドはオブジェクトの複製を作成するメソッドであり、元のオブジェクトと同じ属性や値を持つ新しいオブジェクトを生成する。しかし、元のオブジェクトとは別のオブジェクトとなる。
+
+また、大きな利点として`dup`メソッドによって複製されたオブジェクトに対して、破壊的メソッドを使用した場合でも元のオブジェクトに影響が及ぶことはない。
+
+```
+obj = "Sample"
+obj_d = obj.dup
+
+puts obj                      # Sample
+puts obj_d                    # Sample
+puts obj.equal?(obj_d)        # false
+puts obj == obj_d             # true
 ```

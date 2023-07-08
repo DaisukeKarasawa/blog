@@ -13,6 +13,7 @@ def joinWords(stringArr,delimiter)
     }
 
     stringArr.each_with_index do |s, i|
+        # 新しい文字列が作成される
         str += insertStr.call(s, i)
     end
 
@@ -25,6 +26,7 @@ def joinWords(stringArr,delimiter)
     str = ''
 
     insertStr = -> (s, i) {
+        # 新しい文字列が作成される
         return s[i] if i == stringArr.length-1
         str += s[i] + delimiter + insertStr.call(s, i+1)
     }

@@ -22,5 +22,6 @@ end
 # Solution 3
 def is_palindrome(x)
     return false if x < 0
+    # 整数を数字の配列へ変換
     x.digits.join.to_i == x
 end

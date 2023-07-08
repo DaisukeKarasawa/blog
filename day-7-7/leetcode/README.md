@@ -1,6 +1,6 @@
 ## 学習したこと： [LeetCode](https://leetcode.com/)
 
-### - digits メソッド -
+### Integer#digits
 
 - 参照
 
