@@ -8,7 +8,7 @@
 
   コード: [./codes/uncommon-words-from-two-sentences.rb](https://github.com/DaisukeKarasawa/blog/blob/main/day-7-8/leetcode/codes/uncommon-words-from-two-sentences.rb)
 
-**Array#filter**
+**`Array#filter`**
 
 各要素に対してブロック評価をした値が真である要素を含める配列を返す。真となる要素が一つもなかった場合は、空の配列を返す。
 
@@ -16,7 +16,7 @@
 [1, 2, 3, 4, 5].select { |num| num.even? }  # [2, 4]
 ```
 
-**Hash#filter**
+**`Hash#filter`**
 
 'key', 'value' のペアそれぞれにブロック評価し、真となるペアを含む配列を返す。
 
@@ -27,11 +27,11 @@ h.select { |k, v| k > "a" }     # { "b" => 200, "c" => 300 }
 h.select { |k, v| v < 200 }     # { "a" => 100 }
 ```
 
-**key を評価し、真となる key の value を配列で返したい場合**
+**`key を評価し、真となる key の value を配列で返したい場合`**
 
 例として、作成した Hash の 'value' をブロック評価し、真となる 'value' の 'key' を配列で返したい場合、または、作成した Hash の 'key' をブロック評価し、真となる 'key' の 'value' を配列で返したい場合には、以下のような方法がある。
 
-```./codes/uncommon-words-from-two-sentences.rb
+```
 hash = {
     "apple" => 10,
     "banana" => 1,
@@ -46,4 +46,41 @@ puts keys.join(' ')     # banana lemon
 # 'key' をブロック評価し、真となる 'key' の 'value' を返したい場合
 values = hash.select { |key, value| key == 'apple' }.values
 puts values             # 10
+```
+
+---
+
+### Date.parse
+
+- 参照
+
+  問題: [Number of Days Between Two Dates](https://leetcode.com/problems/number-of-days-between-two-dates/)
+
+  コード: [./codes/number-of-days-between-two-dates.rb](https://github.com/DaisukeKarasawa/blog/blob/main/day-7-8/leetcode/codes/number-of-days-between-two-dates.rb)
+
+有効な日付表現フォーマットを渡すことで、対応する日付オブジェクトを返す。
+
+```
+require 'date'
+
+date = "2022-07-08"
+puts date.class         # String
+
+parseDate = Date.parse(date)
+puts parseDate.class    # Date
+```
+
+**日付差分を計算するときの注意点**
+
+日付の差分を計算すると、結果として`Rational`(有理数)オブジェクトが返される場合があり、正確な整数値ではなく分数となることがある。したがって、`to_i`を使用することで整数値に変換する必要がある場合がる。
+
+```
+require 'date'
+
+date1 = "2022-07-08"
+date2 = "2023-07-08"
+result = (Date.parse(date1) - Date.parse(date2))
+
+puts result.class           # Rational
+puts result.to_i.abs        # 365
 ```
