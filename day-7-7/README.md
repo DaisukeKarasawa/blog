@@ -6,6 +6,6 @@
 
   LeetCode でアルゴリズムの学習を行なった際に学んだことまとめ
 
-- [学習したこと: Recursion](https://github.com/DaisukeKarasawa/blog/tree/main/day-7-2/recursion)
+- [学習したこと: Recursion](https://github.com/DaisukeKarasawa/blog/tree/main/day-7-7/recursion)
 
   Recursion でアルゴリズムの学習を行なった際に学んだことまとめ
