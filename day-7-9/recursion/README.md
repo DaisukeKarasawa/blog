@@ -10,7 +10,7 @@
 
 'nil?' はそのオブジェクト自体が存在しないことを表し、'empty?' はそのオブジェクト自体は存在するが、その中身は空であることを表す。
 
-**Object#nil?**
+**- Object#nil? -**
 
 レシーバが nil であれば、真を返す。つまり、オブジェクト自体が存在しない。
 
@@ -24,7 +24,7 @@ puts hash.nil?          # false
 puts hash[:hello]       # true
 ```
 
-**#empty?**
+**- #empty? -**
 
 `String#empty?`: 文字列が空(＝長さが 0)の時、真を返す。
 
@@ -52,6 +52,8 @@ puts array2.empty?      # false
 hash = {}
 puts hash.empty?    # true
 ```
+
+---
 
 ### - Array#to_h -
 
