@@ -70,6 +70,8 @@ hash = [['hello', 'world'], [:apple, 100]].to_h
 puts hash       # { "hello" => "world", :apple => 100 }
 ```
 
+---
+
 ### - String#each_char -
 
 - 参照
