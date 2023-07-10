@@ -69,3 +69,18 @@ puts hash.empty?    # true
 hash = [['hello', 'world'], [:apple, 100]].to_h
 puts hash       # { "hello" => "world", :apple => 100 }
 ```
+
+### - String#each_char -
+
+- 参照
+
+  問題: [アラブ人による頻度分析](https://recursionist.io/dashboard/problems/96)
+
+  コード: [./codes/code_96.rb](https://github.com/DaisukeKarasawa/blog/blob/main/day-7-9/recursion/codes/code_96.rb)
+
+文字列の各文字に対して繰り返し処理を行う。
+
+```
+str = 'helloworld'
+str.each_char { |c| print c, '!' }      # h!e!l!l!o!w!o!r!l!d!
+```
