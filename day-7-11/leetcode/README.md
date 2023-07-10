@@ -6,6 +6,8 @@
 
 - String#chars
 
+---
+
 ### - Array.new -
 
 - 参照

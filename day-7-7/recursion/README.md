@@ -4,6 +4,8 @@
 
 - String と Array の大きな違い
 
+---
+
 ### - String と Array の大きな違い -
 
 - 参照

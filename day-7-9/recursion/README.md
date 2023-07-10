@@ -8,6 +8,8 @@
 
 - String#each_char
 
+---
+
 ### - nil? と empty? -
 
 - 参照

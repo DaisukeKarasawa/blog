@@ -8,6 +8,8 @@
 
 - Object#dup
 
+---
+
 ### - select メソッド -
 
 - 参照
