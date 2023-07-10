@@ -1,5 +1,13 @@
 ## 学習したこと: [Recursion](https://recursionist.io/)
 
+### 目次
+
+- nil? と empty?
+
+- Array#to_h
+
+- String#each_char
+
 ### - nil? と empty? -
 
 - 参照

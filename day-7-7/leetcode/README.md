@@ -1,6 +1,14 @@
 ## 学習したこと： [LeetCode](https://leetcode.com/)
 
-### Integer#digits
+### 目次
+
+- Integer#digits
+
+- 繰り返し処理
+
+- ニムゲームの勝利法則
+
+### - Integer#digits -
 
 - 参照
 

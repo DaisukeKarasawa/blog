@@ -1,5 +1,13 @@
 ## 学習したこと: [LeetCode](https://leetcode.com/)
 
+### 目次
+
+- select メソッド
+
+- Date.parse
+
+- Object#dup
+
 ### - select メソッド -
 
 - 参照
@@ -50,7 +58,7 @@ puts values             # 10
 
 ---
 
-### Date.parse
+### - Date.parse -
 
 - 参照
 
@@ -87,7 +95,7 @@ puts result.to_i.abs        # 365
 
 ---
 
-### Object#dup
+### - Object#dup -
 
 - 参照
 
